@@ -1,2 +1,1 @@
-# phaser-study
-phaser-study
+# Phaser3 Study
