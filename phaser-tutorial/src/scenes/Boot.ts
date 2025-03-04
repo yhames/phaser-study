@@ -1,4 +1,4 @@
-import { Images, Scenes } from './scene.config';
+import { Images, Scenes } from './Constant';
 
 export default class Boot extends Phaser.Scene {
   constructor() {

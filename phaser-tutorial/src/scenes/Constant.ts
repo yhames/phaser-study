@@ -1,6 +1,7 @@
 export const Scenes = {
   Boot: 'Boot',
   Preloader: 'Preloader',
+  PlayingScene: 'PlayingScene',
 };
 
 export const Images = {
@@ -103,8 +104,8 @@ export const Audios = {
     path: 'assets/sounds/nextLevel.ogg',
   },
   gameOver: {
-    key: 'audio_gameOver',
-    path: 'assets/sounds/gameOver.ogg',
+    key: 'audio_gameover',
+    path: 'assets/sounds/gameover.ogg',
   },
   gameClear: {
     key: 'audio_gameClear',

@@ -1,13 +1,24 @@
-import { useState } from 'react';
+import { useLayoutEffect, useRef } from 'react';
+import StartGame from './scenes/Game';
 
-function App() {
-  const [count, setCount] = useState(0);
+const App = () => {
+  const game = useRef<Phaser.Game | null>(null!);
+
+  useLayoutEffect(() => {
+    // create the game
+    game.current = StartGame('game-container');
+    // clean up
+    return () => {
+      game.current?.destroy(true);
+      if (game.current !== null) game.current = null;
+    };
+  }, []); // no dependencies, run once
 
   return (
     <>
-      <div>Hello World!</div>
+      <div id="game-container"></div>
     </>
   );
-}
+};
 
 export default App;
