@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from 'react';
-import StartGame from './scenes/Game';
+import { StartGame } from './scenes/Game';
 
 const App = () => {
   const game = useRef<Phaser.Game | null>(null!);

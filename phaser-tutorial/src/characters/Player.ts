@@ -1,9 +1,14 @@
-import Config from '../scenes/Config';
 import { Sprites } from '../scenes/Constant';
+import { config } from '../scenes/Game';
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   constructor(scene: Phaser.Scene) {
-    super(scene, Config.width / 2, Config.height / 2, Sprites.player.key);
+    super(
+      scene,
+      (config.width as number) / 2,
+      (config.height as number) / 2,
+      Sprites.player.key,
+    );
     scene.add.existing(this);
     scene.physics.add.existing(this);
 
