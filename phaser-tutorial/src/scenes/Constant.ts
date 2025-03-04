@@ -128,3 +128,44 @@ export const Fonts = {
     data: 'assets/font/font.xml',
   },
 };
+
+export const Animes = {
+  mob1: {
+    key: 'mob1_anim',
+  },
+  mob2: {
+    key: 'mob2_anim',
+  },
+  mob3: {
+    key: 'mob3_anim',
+  },
+  mob4: {
+    key: 'mob4_anim',
+  },
+  lion: {
+    key: 'lion_anim',
+    idle: 'lion_idle',
+  },
+  player: {
+    key: 'player_anim',
+    idle: 'player_idle',
+  },
+  explosion: {
+    key: 'explode',
+  },
+  clawWhite: {
+    key: 'scratch_white',
+  },
+  clawYellow: {
+    key: 'scratch_yellow',
+  },
+  catnip: {
+    key: 'catnip_anim',
+  },
+  expUp: {
+    red: 'red',
+    blue: 'blue',
+    yellow: 'yellow',
+    green: 'green',
+  },
+};
